@@ -340,6 +340,25 @@ header nav a:hover{
     background-position: center 30%;
 }
 
+#pvp h2{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#pvp>div{
+    width: 50%;
+    margin: 1rem auto 2rem auto;
+}
+
+#pvp>div>p{
+    text-align: center;
+}
+
+#pvp>img{
+    width: 100%;
+    object-fit: cover;
+    height: 70vh;
+}
 
 
 /* ESTILOS PARA EL FOOTER */
