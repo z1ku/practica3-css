@@ -266,18 +266,79 @@ header nav a:hover{
 
 #facciones{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     margin: 0 auto;
 }
 
-#facciones img{
+#facciones h2{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.faccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.faccion>img{
+    width: 200px;
+    object-fit: cover;
+    margin: 1rem;
+    background-color: #000000c2;
+    padding: 1rem;
+}
+
+.faccion>h3{
+    text-align: center;
+    font-size: 2.5rem;
+    background-color: #000000c2;
+    min-width: 30%;
+}
+
+.contenedorRazas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.raza{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    background-color: #000000c2;
+}
+
+.raza>img{
     width: 150px;
+    height: 180px;
     object-fit: cover;
     margin: 1rem;
 }
 
+.raza>h4{
+    text-align: center;
+    font-size: 1.3rem;
+}
 
+#horda{
+    height: fit-content;
+    background-image: url(../img/horda_fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#alianza{
+    height: fit-content;
+    background-image: url(../img/alianza_fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 30%;
+}
 
 
 
