@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="body_tienda">
     <header>
         <a href="../index.html"><img src="../img/logo.jfif" alt="" id="logo"></a>
         <nav>
@@ -31,7 +31,7 @@
         <a id="boton_jugar">Jugar ahora</a>
     </header>
     <main>
-        <img src="img/shop.jpg" alt="" id="img_bienvenida">
+        <img src="../img/shop.jpg" alt="" id="img_bienvenida">
         <h2 id="titulo-tienda">Tienda</h2>
         <section id="tienda">
             <!-- FILTROS -->
@@ -40,6 +40,11 @@
                 <h3>Categoría</h3>
                 <div class="categorias">
                     <button class="categoria-btn">Todas</button>
+                    <button class="categoria-btn">Armadura</button>
+                    <button class="categoria-btn">Espada</button>
+                    <button class="categoria-btn">Arco</button>
+                    <button class="categoria-btn">Martillo</button>
+                    <button class="categoria-btn">Hacha</button>
                 </div>
                 <h3>Fecha</h3>
                 <form class="fecha-form">
@@ -51,14 +56,163 @@
                 <form class="precio-form">
                     <input type="range" class="precio-filtro" min="0" value="0" max="100"/>
                 </form>
-                <p class="valor-precio">0</p>
+                <p class="valor-precio">Limite de precio aplicado: 0 gold</p>
                 <button class="carrito-btn">
                     <i class="fa-solid fa-sack-dollar"></i>
                 </button>
             </div>
             <!-- CONTENEDOR PARA PRODUCTOS -->
             <div class="contenedor_productos">
-                
+                <article class="product">
+                    <div class="product-container">
+                        <img src="https://eltiromedieval.com/9047-large_default/espada-bastarda-magnus-3-calimacil.jpg" class="product-img img" alt=""/>
+                        <div class="product-icons">
+                            <button class="product-modal-btn product-icon">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="product-name">Espada bastarda</h4>
+                        <p class="product-price">Precio: 30 gold coins</p>
+                        <p class="product-category">Categoria: espada</p>
+                    </div>
+                </article>
+                <article class="product">
+                    <div class="product-container">
+                        <img src="https://lojareidasespadas.com/24556-home_default/peto-templario-para-armadura-peto-de-los-caballeros-templarios-la-orden-de-los-pobres-caballeros-de-cristo-latin-pauperes-commil.jpg" class="product-img img" alt=""/>
+                        <div class="product-icons">
+                            <button class="product-modal-btn product-icon">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="product-name">Coraza de templario</h4>
+                        <p class="product-price">Precio: 55 gold coins</p>
+                        <p class="product-category">Categoria: armadura</p>
+                    </div>
+                </article>
+                <article class="product">
+                    <div class="product-container">
+                        <img src="https://mortisdraco.com/wp-content/uploads/2019/10/989626-Rattanbogen-kurz56bb8c8479fd5.jpg" class="product-img img" alt=""/>
+                        <div class="product-icons">
+                            <button class="product-modal-btn product-icon">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="product-name">Arco largo</h4>
+                        <p class="product-price">Precio: 25 gold coins</p>
+                        <p class="product-category">Categoria: arco</p>
+                    </div>
+                </article>
+                <article class="product">
+                    <div class="product-container">
+                        <img src="https://lacasadelrecreador-431a.kxcdn.com/5837-large_default/martillo-de-armas.jpg" class="product-img img" alt=""/>
+                        <div class="product-icons">
+                            <button class="product-modal-btn product-icon">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="product-name">Martillo de guerra</h4>
+                        <p class="product-price">Precio: 45 gold coins</p>
+                        <p class="product-category">Categoria: martillo</p>
+                    </div>
+                </article>
+                <article class="product">
+                    <div class="product-container">
+                        <img src="https://www.zonadisfraces.com/16568-thickbox_default/hacha-gigante-skeleton.jpg" class="product-img img" alt=""/>
+                        <div class="product-icons">
+                            <button class="product-modal-btn product-icon">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="product-name">Hacha corrupta</h4>
+                        <p class="product-price">Precio: 225 gold coins</p>
+                        <p class="product-category">Categoria: hacha</p>
+                    </div>
+                </article>
+                <article class="product">
+                    <div class="product-container">
+                        <img src="https://static.wikia.nocookie.net/el-continente-de-arcadia-campana-de-dnd-5e/images/f/f3/Dragonslayer.jpeg/revision/latest?cb=20190406052316&path-prefix=es" class="product-img img" alt=""/>
+                        <div class="product-icons">
+                            <button class="product-modal-btn product-icon">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="product-name">Espada matadragones</h4>
+                        <p class="product-price">Precio: 359 gold coins</p>
+                        <p class="product-category">Categoria: espada</p>
+                    </div>
+                </article>
+                <article class="product">
+                    <div class="product-container">
+                        <img src="https://www.eviltailors.com/77462-large_default_2x/gladiator-maximus-helmet-with-spikes-16-mm-steel-with-leather-liner.jpg" class="product-img img" alt=""/>
+                        <div class="product-icons">
+                            <button class="product-modal-btn product-icon">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="product-name">Yelmo de gladiador</h4>
+                        <p class="product-price">Precio: 45 gold coins</p>
+                        <p class="product-category">Categoria: armadura</p>
+                    </div>
+                </article>
+                <article class="product">
+                    <div class="product-container">
+                        <img src="https://www.larpdistribution.com/wp-content/uploads/2021/02/MCI-3719.png" class="product-img img" alt=""/>
+                        <div class="product-icons">
+                            <button class="product-modal-btn product-icon">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="product-name">Escudo de torre</h4>
+                        <p class="product-price">Precio: 65 gold coins</p>
+                        <p class="product-category">Categoria: armadura</p>
+                    </div>
+                </article>
+                <article class="product">
+                    <div class="product-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Uncrossed_gladius.jpg/800px-Uncrossed_gladius.jpg" class="product-img img" alt=""/>
+                        <div class="product-icons">
+                            <button class="product-modal-btn product-icon">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="product-name">Gladius</h4>
+                        <p class="product-price">Precio: 65 gold coins</p>
+                        <p class="product-category">Categoria: espada</p>
+                    </div>
+                </article>
+                <article class="product">
+                    <div class="product-container">
+                        <img src="https://static.wikia.nocookie.net/wow/images/8/8d/Doomhammer.jpg/revision/latest?cb=20130815234819&path-prefix=es" class="product-img img" alt=""/>
+                        <div class="product-icons">
+                            <button class="product-modal-btn product-icon">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="product-name">Doomhammer</h4>
+                        <p class="product-price">Precio: 255 gold coins</p>
+                        <p class="product-category">Categoria: martillo</p>
+                    </div>
+                </article>
             </div>
         </section>
     </main>

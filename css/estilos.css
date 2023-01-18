@@ -360,6 +360,149 @@ header nav a:hover{
     height: 70vh;
 }
 
+/* ESTILOS PARA TIENDA */
+#body_tienda{
+    background-color: rgb(63, 63, 63);
+}
+
+#cabecera h1{
+    background-color: rgb(15, 15, 15);
+    color: whitesmoke;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+#img_bienvenida{
+    margin: 0;
+    height: 35vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+#titulo-tienda{
+    background-color: rgba(15, 15, 15, 0.774);
+    color: whitesmoke;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 90%;
+    margin: 1rem auto;
+    border: 1px solid black;
+}
+
+#tienda{
+    width: 90%;
+    display: flex;
+    margin: 3rem auto;
+}
+
+#filtros{
+    background-color: rgba(15, 15, 15, 0.774);
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem;
+    margin-right: 1rem;
+    border: 1px solid black;
+    position: sticky;
+    top: 8rem;
+}
+
+.contenedor_productos{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(15, 15, 15, 0.774);
+    border: 1px solid black;
+}
+
+.product>div{
+    text-align: center;
+}
+
+.product img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    background-color: white;
+}
+
+.product-modal-btn{
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.product-modal-btn:hover{
+    background-color: rgb(240, 240, 240);
+}
+
+.product-icons{
+    width: 25%;
+    margin: 1rem auto 0 auto;
+}
+
+.product-name{
+    text-transform: uppercase;
+}
+
+.product-cart-btn{
+    background-color: gold;
+    border: 1px solid black;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.7rem;
+}
+
+.product-cart-btn:hover{
+    background-color: rgb(255, 227, 71);
+}
+
+.carrito-btn{
+    background-color: gold;
+    border: 1px solid black;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.7rem;
+}
+
+.carrito-btn:hover{
+    background-color: rgb(255, 227, 71);
+}
+
+.buscador-input{
+    padding: 0.5rem;
+}
+
+.categoria-btn{
+    display: block;
+    margin: 0.25em 0;
+    padding: 0.25rem;
+    text-transform: capitalize;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.fecha-form{
+    display: flex;
+}
+
+.btn-fecha{
+    background-color: white;
+    border: 1px solid black;
+}
+
+.btn-fecha:hover{
+    background-color: rgb(240, 240, 240);
+}
 
 /* ESTILOS PARA EL FOOTER */
 footer{
@@ -384,3 +527,41 @@ footer a:hover{
 footer>div{
     margin-right: 2rem;
 }
+
+/* MEDIA QUERYS */
+@media screen and (max-width: 1300px){
+    #filtros{
+        top: 15rem;
+    }
+    .contenedor_productos{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 992px){
+    .contenedor_productos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 800px){
+    #filtros{
+        top: 20rem;
+    }
+
+    .contenedor_productos{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 560px){
+    #tienda{
+        flex-direction: column;
+    }
+
+    #filtros{
+        margin-bottom: 1rem;
+        position: initial;
+    }
+}
+
