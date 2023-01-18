@@ -31,7 +31,36 @@
         <a id="boton_jugar">Jugar ahora</a>
     </header>
     <main>
-
+        <img src="img/shop.jpg" alt="" id="img_bienvenida">
+        <h2 id="titulo-tienda">Tienda</h2>
+        <section id="tienda">
+            <!-- FILTROS -->
+            <div id="filtros">
+                <input type="text" class="buscador-input" placeholder="Buscar..."/>
+                <h3>Categoría</h3>
+                <div class="categorias">
+                    <button class="categoria-btn">Todas</button>
+                </div>
+                <h3>Fecha</h3>
+                <form class="fecha-form">
+                    <input type="date" class="fecha-filtro1" value="">
+                    <input type="date" class="fecha-filtro2" value="">
+                    <button type="button" class="btn-fecha">Buscar</button>
+                </form>
+                <h3>Precio</h3>
+                <form class="precio-form">
+                    <input type="range" class="precio-filtro" min="0" value="0" max="100"/>
+                </form>
+                <p class="valor-precio">0</p>
+                <button class="carrito-btn">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                </button>
+            </div>
+            <!-- CONTENEDOR PARA PRODUCTOS -->
+            <div class="contenedor_productos">
+                
+            </div>
+        </section>
     </main>
     <footer>
         <footer>
