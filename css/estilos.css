@@ -365,20 +365,14 @@ header nav a:hover{
     background-color: rgb(63, 63, 63);
 }
 
-#cabecera h1{
-    background-color: rgb(15, 15, 15);
-    color: whitesmoke;
-    margin: 0;
-    padding: 1rem;
-    text-align: center;
-    font-size: 2.3rem;
-}
-
 #img_bienvenida{
     margin: 0;
-    height: 35vh;
+    height: 45vh;
     width: 100%;
     object-fit: cover;
+    box-shadow: 1px 0px 5px 2px rgb(0 0 0 / 75%);
+    -webkit-box-shadow: 1px 0px 5px 2px rgb(0 0 0 / 75%);
+    -moz-box-shadow: 1px 0px 5px 2px rgba(0,0,0,0.75);
 }
 
 #titulo-tienda{
@@ -504,6 +498,90 @@ header nav a:hover{
     background-color: rgb(240, 240, 240);
 }
 
+/* ESTILOS PARA CONTACTO */
+#img_contacto{
+    margin: 0;
+    height: 45vh;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 1px 0px 5px 2px rgb(0 0 0 / 75%);
+    -webkit-box-shadow: 1px 0px 5px 2px rgb(0 0 0 / 75%);
+    -moz-box-shadow: 1px 0px 5px 2px rgba(0,0,0,0.75);
+}
+
+#titulo_contacto{
+    background-color: rgba(41, 41, 41, 0.829);
+    color: whitesmoke;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 90%;
+    margin: 1rem auto;
+    border: 1px solid black;
+}
+
+#seccionContacto>form{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(41, 41, 41, 0.829);
+    color: whitesmoke;
+    padding: 1.5rem;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid black;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    margin: 2rem auto 3rem auto;
+}
+
+#seccionContacto form textarea{
+    margin-left: 1rem;
+}
+
+#seccionContacto form div{
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#seccionContacto input[type=submit]{
+    margin-top: 1rem;
+    color: white;
+    background-color: black;
+    padding: 0.2rem;
+}
+
+#seccionContacto input[type=submit]:hover{
+    background-color: rgb(27, 27, 27);
+}
+
+/* ESTILOS PARA PAGINA PRODUCTO */
+#pagina_producto{
+    min-height: 90vh;
+    background-image: url(../img/shop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pagina_producto .product{
+    width: fit-content;
+}
+
+.boton_comprar{
+    background-color: gold;
+    border: 1px solid black;
+    padding: 0.5rem;
+}
+
+.boton_comprar:hover{
+    background-color: rgb(252, 223, 63);
+}
+
 /* ESTILOS PARA EL FOOTER */
 footer{
     display: flex;
@@ -560,8 +638,8 @@ footer>div{
     }
 
     #filtros{
-        margin-bottom: 1rem;
         position: initial;
+        margin: auto auto 1rem auto
     }
 }
 
