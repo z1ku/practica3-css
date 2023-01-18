@@ -42,6 +42,7 @@ header{
 header nav ul{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     padding-inline-start: 0;
     list-style-type: none;
@@ -56,6 +57,11 @@ header nav a{
 
 header nav a:hover{
     color: white;
+}
+
+.rrss{
+    display: flex;
+    justify-content: center;
 }
 
 .rrss a{
@@ -120,6 +126,7 @@ header nav a:hover{
 }
 
 #bienvenida span{
+    text-align: center;
     color: #eaeaea;
     font-size: 2rem;
     border-top: 1px solid white;
@@ -608,11 +615,19 @@ footer>div{
 
 /* MEDIA QUERYS */
 @media screen and (max-width: 1300px){
+    header{
+        justify-content: center;
+    }
+
     #filtros{
         top: 15rem;
     }
     .contenedor_productos{
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    #pvp>div{
+        width: 90%;
     }
 }
 
@@ -632,14 +647,34 @@ footer>div{
     }
 }
 
-@media screen and (max-width: 560px){
+@media screen and (max-width: 700px){
     #tienda{
         flex-direction: column;
     }
-
     #filtros{
         position: initial;
         margin: auto auto 1rem auto
+    }
+}
+
+@media screen and (max-width: 560px){
+    #historia p{
+        width: 100%;
+    }
+    #combate p{
+        width: 100%;
+    }
+
+    .titulo{
+        font-size: 2rem;
+    }
+    
+    .fecha-form{
+        flex-wrap: wrap;
+    }
+
+    #seccionContacto>form{
+        width: 100%;
     }
 }
 
